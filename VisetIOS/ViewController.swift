@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     @IBAction func EnviarTexto(_ sender: Any) {
         let texto = Texto.text;
         let textoFinal = texto?.replacingOccurrences(of: " ", with: "%20");
-        if let url = URL(string: "https://viset.varraysoftware.com/viset-mobile.php?msg=" + textoFinal!) {
+        if let url = URL(string: "https://viset.vivarsoft.es/viset-mobile.php?msg=" + textoFinal!) {
             do {
                 let contents = try String(contentsOf: url)
                 let textoForm = contents.replacingOccurrences(of: "<br>", with: "\n", options: .literal, range: nil)
