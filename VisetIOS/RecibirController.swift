@@ -48,7 +48,7 @@ class RecibirController: UIViewController {
     
     @IBAction func RecibirTexto(_ sender: Any) {
         let token = Token.text;
-        if let url = URL(string: "https://viset.varraysoftware.com/archivos/" + token! + ".txt") {
+        if let url = URL(string: "https://viset.vivarsoft.es/archivos/" + token! + ".txt") {
             do {
                 let contents = try String(contentsOf: url)
                 let textoFinal = contents.replacingOccurrences(of: "<br>", with: "\n", options: .literal, range: nil)
