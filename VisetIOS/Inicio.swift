@@ -26,7 +26,7 @@ class Inicio: UIViewController
     }
     
     func estadoServer(){
-        let url = URL(string: "https://viset.varraysoftware.com")
+        let url = URL(string: "https://viset.vivarsoft.es")
         let task = URLSession.shared.dataTask(with: url!) { _, response, _ in
             if let httpResponse = response as? HTTPURLResponse {
                 let EstadoServerSTR = String(httpResponse.statusCode);
